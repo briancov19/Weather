@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#conteiner.Sunny {
+    background: linear-gradient(#70e1f5, #ffd194);
+    background-size: cover
+}
+
+#conteiner.Clear {
+    background: linear-gradient(#7F7FD5, #86A8E7,#91EAE4);
+    background-size: cover
+}
+
+#conteiner.Rain {
+    background: linear-gradient(#0F2027, #203A43,#2C5364);
+    background-size: cover
+}
+
+#conteiner.Showers {
+    background: linear-gradient(#659999, #94d4ff);
+    background-size: cover
+}
+
+#conteiner.Clouds {
+    background: linear-gradient(#bdc3c7,#2c3e50);
+    background-size: cover
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+
+#conteiner {
+    z-index: 900;
+    display: flex;
+    min-width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#location {
+    transform: translateY(-100px);
+    color: white;
+    font-size: 50px;
+}
+
+#date {
+    transform: translateY(-350px);
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 20px;
+}
+
+.celcius {
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(20px);
+}
+
+.celcius .icon {
+    font-size: 60px;
+    transform: translateX(-20px);
+}
+
+.celcius .display-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.celcius #temperature {
+    font-size: 90px;
+    color: white;
+}
+
+.celcius p {
+    font-size: 40px;
+    align-self: flex-start;
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    transform: translateY(80px);
+    font-size: 20px;
+    border-top: 1px solid white ;
+    border-bottom: 1px solid white;
+    padding: 16px;
+}
+
+.row #humidity {
+    margin-right: 50px;
+    color: white;
+    font-size: 18px;
+}
+
+.row #pressure {
+    color: white;
+    font-size: 18px;
+}
+
+.row p {
+    margin-right: 10px;
+    color: white;
+}
+
+#description {
+    font-size: 30px;
+    color: white;
+}
