@@ -122,3 +122,14 @@ body{
     font-size: 30px;
     color: white;
 }
+@media (min-width: 768px) { 
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    #conteiner {
+    min-width: 80%;
+    height: 80%;
+    }
+}
